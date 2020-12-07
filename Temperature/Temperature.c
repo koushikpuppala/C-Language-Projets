@@ -6,7 +6,6 @@
 //From Kelvin to Fahrenheit;
 //From Kelvin to Celsius;
 
-
 #include<stdio.h>
 
 int main(void)
