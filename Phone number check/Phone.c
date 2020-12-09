@@ -23,12 +23,13 @@ int main(void)
 
     scanf("%d",&opt);
 
-    switch (opt)
-    {
-    case 1:
-
     printf("Hey...\nEnter a Mobile Number (With out country code and area code) :");
     scanf("%lld",&no);
+
+    switch (opt)
+    {
+    case 1: //India
+
         while (no>0)
         {
             no=no/10;
@@ -36,17 +37,14 @@ int main(void)
         }
 
         if (c==10)
-            {printf("Yes this number is Valid Number only");
-            break;}
+            printf("Yes this number is Valid Number only");
         else
             printf("Sorry the entered number is not valid in this Country\nPlease check you entered Country or Number is Correct");
 
         break;
 
-    case 2:
+    case 2: //USA
 
-    printf("Hey...\nEnter a Mobile Number (With out country code and area code) :");
-    scanf("%lld",&no);
         while (no>0)
         {
             no=no/10;
@@ -60,10 +58,8 @@ int main(void)
 
         break;
 
-    case 3:
+    case 3: //Russia
 
-    printf("Hey...\nEnter a Mobile Number (With out country code and area code) :");
-    scanf("%lld",&no);
         while (no>0)
         {
             no=no/10;
@@ -77,11 +73,35 @@ int main(void)
 
         break;
 
-    case 4:
+    case 4: //Engalnd
 
-    printf("Sorry this program ");
+        while (no>0)
+        {
+            no=no/10;
+            c++;
+        }
 
+        if (c==7)
+            printf("Yes this number is Valid Number only");
+        else
+            printf("Sorry the entered number is not valid in this Country\nPlease check you entered Country or Number is Correct");
 
+        break;
+
+    case 5: //Singpore
+
+        while (no>0)
+        {
+            no=no/10;
+            c++;
+        }
+
+        if (c==7)
+            printf("Yes this number is Valid Number only");
+        else
+            printf("Sorry the entered number is not valid in this Country\nPlease check you entered Country or Number is Correct");
+
+        break;
 
     default:printf("Invalid Option Entered");
         break;
