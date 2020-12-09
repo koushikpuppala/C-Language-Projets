@@ -13,7 +13,10 @@ int main(void)
     int opt,c;
     no=opt=c=0;
 
-    printf("Hey...\nWhich Country number you want to check");
+    printf("Hey...\nEnter a Mobile Number (With out country code and area code) : ");
+    scanf("%lld",&no);
+
+    printf("Which Country number you have entered above");
     printf("\n1.India");
     printf("\n2.USA");
     printf("\n3.Russia");
@@ -23,11 +26,10 @@ int main(void)
 
     scanf("%d",&opt);
 
-    printf("Hey...\nEnter a Mobile Number (With out country code and area code) :");
-    scanf("%lld",&no);
-
     switch (opt)
+
     {
+
     case 1: //India
 
         while (no>0)
@@ -37,7 +39,7 @@ int main(void)
         }
 
         if (c==10)
-            printf("Yes this number is Valid Number only");
+            printf("\n*** Yes this number is Valid Number only ***\n\n");
         else
             printf("Sorry the entered number is not valid in this Country\nPlease check you entered Country or Number is Correct");
 
@@ -52,13 +54,13 @@ int main(void)
         }
 
         if (c==7)
-            printf("Yes this number is Valid Number only");
+            printf("\n*** Yes this number is Valid Number only ***\n\n");
         else
             printf("Sorry the entered number is not valid in this Country\nPlease check you entered Country or Number is Correct");
 
         break;
 
-    case 3: //Russia
+    case 3: //Russia 
 
         while (no>0)
         {
@@ -67,13 +69,13 @@ int main(void)
         }
 
         if (c==7)
-            printf("Yes this number is Valid Number only");
+            printf("\n*** Yes this number is Valid Number only ***\n\n");
         else
             printf("Sorry the entered number is not valid in this Country\nPlease check you entered Country or Number is Correct");
 
         break;
 
-    case 4: //Engalnd
+    case 4: //Engalnd have 10-Digit number
 
         while (no>0)
         {
@@ -82,13 +84,13 @@ int main(void)
         }
 
         if (c==10)
-            printf("Yes this number is Valid Number only");
+            printf("\n*** Yes this number is Valid Number only ***\n\n");
         else
             printf("Sorry the entered number is not valid in this Country\nPlease check you entered Country or Number is Correct");
 
         break;
 
-    case 5: //Singpore
+    case 5: //Singpore have 8-Digit number
 
         while (no>0)
         {
@@ -97,7 +99,7 @@ int main(void)
         }
 
         if (c==8)
-            printf("Yes this number is Valid Number only");
+            printf("\n*** Yes this number is Valid Number only ***\n\n");
         else
             printf("Sorry the entered number is not valid in this Country\nPlease check you entered Country or Number is Correct");
 
@@ -106,4 +108,7 @@ int main(void)
     default:printf("Invalid Option Entered");
         break;
     }
+
+    getch();
+
 }
