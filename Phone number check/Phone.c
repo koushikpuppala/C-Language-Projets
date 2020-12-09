@@ -25,7 +25,6 @@ int main(void)
     printf("\n4.Engalnd");
     printf("\n5.Singpore");
     printf("\nEnter your Option : ");
-
     scanf("%d",&opt);
 
     } while (opt>5);
