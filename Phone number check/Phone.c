@@ -19,7 +19,7 @@ int main(void)
     printf("\n3.Russia");
     printf("\n4.Engalnd");
     printf("\n5.Singpore");
-    printf("\nEnter your Option :");
+    printf("\nEnter your Option : ");
 
     scanf("%d",&opt);
 
@@ -81,7 +81,7 @@ int main(void)
             c++;
         }
 
-        if (c==7)
+        if (c==10)
             printf("Yes this number is Valid Number only");
         else
             printf("Sorry the entered number is not valid in this Country\nPlease check you entered Country or Number is Correct");
@@ -96,7 +96,7 @@ int main(void)
             c++;
         }
 
-        if (c==7)
+        if (c==8)
             printf("Yes this number is Valid Number only");
         else
             printf("Sorry the entered number is not valid in this Country\nPlease check you entered Country or Number is Correct");
