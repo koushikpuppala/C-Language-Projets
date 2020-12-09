@@ -16,7 +16,9 @@ int main(void)
     printf("Hey...\nEnter a Mobile Number (With out country code and area code) : ");
     scanf("%lld",&no);
 
-    printf("Which Country number you have entered above");
+    do{
+
+    printf("\nWhich Country number you have entered above");
     printf("\n1.India");
     printf("\n2.USA");
     printf("\n3.Russia");
@@ -26,11 +28,13 @@ int main(void)
 
     scanf("%d",&opt);
 
+    } while (opt>5);
+
     switch (opt)
 
     {
 
-    case 1: //India
+    case 1: //India have 10-Digit number
 
         while (no>0)
         {
@@ -45,7 +49,7 @@ int main(void)
 
         break;
 
-    case 2: //USA
+    case 2: //USA have 7-Digit number
 
         while (no>0)
         {
@@ -60,7 +64,7 @@ int main(void)
 
         break;
 
-    case 3: //Russia 
+    case 3: //Russia have 7-Digit number
 
         while (no>0)
         {

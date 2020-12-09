@@ -9,11 +9,11 @@ This code ie Written in VS Code IDE.
 
 int main(void)
 {
-    long long int no,r;
+    unsigned long no,r;
     int ln;
     no=r=ln=0;
     printf("Hey..\nEnter any number i will show you magic :");
-    scanf("%lld",&no);
+    scanf("%lu",&no);
 
     while (no>0)
     {
