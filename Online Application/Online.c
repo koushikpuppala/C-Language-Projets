@@ -13,7 +13,7 @@ int main(void)
 {
     long long int no,n;
     int opt,c,p,cp;
-    char fn[100],ln[100],ip,email[200],gen[100],choice,pass[100],cpass[100];
+    char fn[100],ln[100],ip,email[100],gen[100],choice,pass[100],cpass[100];
     no=n=opt=c=p=cp=0;
 
     printf("\n\n     *** WELCOME TO ONLINE APPLICATION PROGRAM ***");
