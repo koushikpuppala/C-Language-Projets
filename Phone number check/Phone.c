@@ -6,14 +6,63 @@ This code is coded by using VS Code IDE.
 
 #include<stdio.h>
 #include<conio.h>
+#include<stdlib.h>
+
 
 int main(void)
 {
     long long int no;
     int opt,c;
+    char fn[100],ln[100],ip,email[200],gen[100],choice,pass[100],cpass[100];
     no=opt=c=0;
 
-    printf("Hey...\nEnter a Mobile Number (With out country code and area code) : ");
+    printf("\n\n     *** WELCOME TO ONLINE APPLICATION PROGRAM ***");
+    printf("\n\nPress any Key to Contine....");
+    getch();
+    system("cls");
+
+    printf("\nEnter your firstname : ");
+    scanf("%[^\n]",&fn);
+    fflush(stdin);
+    printf("Enter your lastname : ");
+    scanf("%[^\n]",&ln);
+    fflush(stdin);
+    printf("Enter your gender : ");
+    scanf("%[^\n]",&gen);
+    fflush(stdin);
+
+    do
+    {
+
+    printf("Do you want to continue with (E)mail or (N)umber : ");
+    scanf("%c",&ip);
+    fflush(stdin);
+    
+    } while (ip != 'E' && ip != 'N');
+
+    switch(ip){
+
+    case 'E':
+
+    printf("Enter your email : ");
+    scanf("%[^\n]",&email);
+    fflush(stdin);
+    printf("Enter your password : ");
+    scanf("%[^\n]",&pass);
+    fflush(stdin);
+
+    printf("\n\n    *** CHECK YOUR DEATILES ***\n");
+    printf("\nYour Fullname is \"%s %s\"",fn,ln);
+    printf("\nYour Gender is \"%s\"",gen);
+    printf("\nYour EmailID is \"%s\"",email);
+
+    break;
+
+            //Mobile number Coding
+
+    case 'N':
+
+    printf("Enter a Mobile Number (With out country code and area code) : ");
     scanf("%lld",&no);
 
     do{
@@ -41,10 +90,14 @@ int main(void)
             c++;
         }
 
-        if (c==10)
-            printf("\n*** Yes this number is Valid Number only ***\n\n");
+        if (c==10){
+            printf("\n\n    *** CHECK YOUR DEATILES ***\n");
+            printf("\nYour Fullname is \"%s %s\"",fn,ln);
+            printf("\nYour Gender is \"%s\"",gen);
+            printf("\nYour EmailID is \"%lld\"",no);
+        }
         else
-            printf("Sorry the entered number is not valid in this Country\nPlease check you entered Country or Number is Correct");
+            printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.");
 
         break;
 
@@ -56,10 +109,14 @@ int main(void)
             c++;
         }
 
-        if (c==7)
-            printf("\n*** Yes this number is Valid Number only ***\n\n");
+        if (c==7){
+            printf("\n\n    *** CHECK YOUR DEATILES ***\n");
+            printf("\nYour Fullname is \"%s %s\"",fn,ln);
+            printf("\nYour Gender is \"%s\"",gen);
+            printf("\nYour EmailID is \"%lld\"",no);
+        }
         else
-            printf("Sorry the entered number is not valid in this Country\nPlease check you entered Country or Number is Correct");
+            printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.");
 
         break;
 
@@ -71,10 +128,14 @@ int main(void)
             c++;
         }
 
-        if (c==7)
-            printf("\n*** Yes this number is Valid Number only ***\n\n");
+        if (c==7){
+            printf("\n\n    *** CHECK YOUR DEATILES ***\n");
+            printf("\nYour Fullname is \"%s %s\"",fn,ln);
+            printf("\nYour Gender is \"%s\"",gen);
+            printf("\nYour EmailID is \"%lld\"",no);
+        }
         else
-            printf("Sorry the entered number is not valid in this Country\nPlease check you entered Country or Number is Correct");
+            printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.");
 
         break;
 
@@ -86,10 +147,14 @@ int main(void)
             c++;
         }
 
-        if (c==10)
-            printf("\n*** Yes this number is Valid Number only ***\n\n");
+        if (c==10){
+            printf("\n\n    *** CHECK YOUR DEATILES ***\n");
+            printf("\nYour Fullname is \"%s %s\"",fn,ln);
+            printf("\nYour Gender is \"%s\"",gen);
+            printf("\nYour EmailID is \"%lld\"",no);
+        }
         else
-            printf("Sorry the entered number is not valid in this Country\nPlease check you entered Country or Number is Correct");
+            printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.");
 
         break;
 
@@ -101,16 +166,42 @@ int main(void)
             c++;
         }
 
-        if (c==8)
-            printf("\n*** Yes this number is Valid Number only ***\n\n");
+        if (c==8){
+            printf("\n\n    *** CHECK YOUR DEATILES ***\n");
+            printf("\nYour Fullname is \"%s %s\"",fn,ln);
+            printf("\nYour Gender is \"%s\"",gen);
+            printf("\nYour EmailID is \"%lld\"",no);
+        }
         else
-            printf("Sorry the entered number is not valid in this Country\nPlease check you entered Country or Number is Correct");
+            printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.");
 
         break;
 
-    default:printf("Invalid Option Entered");
+    default:printf("\n");
         break;
+
     }
+    break;
+
+    default: printf("\n");
+    }
+
+    
+    printf("\n\n    *** IF DEATILES ARE CORRECT THEN TYPE \"(Y)ES\"\n        IF DEATILES HAVE CORRECTIONS THEN TYPE \"(N)O\" ***");
+
+    do{
+    printf("\n\nEnter Your option : ");
+    choice=getch();
+
+    if ((choice == 'Y') || (choice == 'y'))
+
+        printf("\n\nYour Application is Submitted Sucessfully");
+
+    else if ((choice == 'N') || (choice == 'n'))
+
+        printf("Please Relaunch the Program and try again");
+
+    } while (choice != 'y' && choice != 'Y' && choice != 'N' && choice != 'n');
 
     getch();
 
