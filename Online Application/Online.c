@@ -4,7 +4,7 @@ This code is written by using VS Code IDE.
 @Developer Puppala Koushik.
 @Mentor Atish Jain Sir.
 @Batch Timming 7-8 pm Class.
-Time taken to complete Half-Day.
+Time taken to complete the code is Half-Day.
 */
 
 #include<stdio.h>
