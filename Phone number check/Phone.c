@@ -37,7 +37,7 @@ int main(void)
     printf("Do you want to continue with (E)mail or (N)umber : ");
     scanf("%c",&ip);
     fflush(stdin);
-    
+
     } while (ip != 'E' && ip != 'N');
 
     switch(ip){
@@ -94,7 +94,7 @@ int main(void)
             printf("\n\n    *** CHECK YOUR DEATILES ***\n");
             printf("\nYour Fullname is \"%s %s\"",fn,ln);
             printf("\nYour Gender is \"%s\"",gen);
-            printf("\nYour EmailID is \"%lld\"",no);
+            printf("\nYour Mobile Number is \"%lld\"",no);
         }
         else
             printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.");
@@ -113,7 +113,7 @@ int main(void)
             printf("\n\n    *** CHECK YOUR DEATILES ***\n");
             printf("\nYour Fullname is \"%s %s\"",fn,ln);
             printf("\nYour Gender is \"%s\"",gen);
-            printf("\nYour EmailID is \"%lld\"",no);
+            printf("\nYour Mobile Number is \"%lld\"",no);
         }
         else
             printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.");
@@ -132,7 +132,7 @@ int main(void)
             printf("\n\n    *** CHECK YOUR DEATILES ***\n");
             printf("\nYour Fullname is \"%s %s\"",fn,ln);
             printf("\nYour Gender is \"%s\"",gen);
-            printf("\nYour EmailID is \"%lld\"",no);
+            printf("\nYour Mobile Number is \"%lld\"",no);
         }
         else
             printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.");
@@ -151,7 +151,7 @@ int main(void)
             printf("\n\n    *** CHECK YOUR DEATILES ***\n");
             printf("\nYour Fullname is \"%s %s\"",fn,ln);
             printf("\nYour Gender is \"%s\"",gen);
-            printf("\nYour EmailID is \"%lld\"",no);
+            printf("\nYour Mobile Number is \"%lld\"",no);
         }
         else
             printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.");
@@ -170,7 +170,7 @@ int main(void)
             printf("\n\n    *** CHECK YOUR DEATILES ***\n");
             printf("\nYour Fullname is \"%s %s\"",fn,ln);
             printf("\nYour Gender is \"%s\"",gen);
-            printf("\nYour EmailID is \"%lld\"",no);
+            printf("\nYour Mobile Number is \"%lld\"",no);
         }
         else
             printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.");
