@@ -31,13 +31,13 @@ int main(void)
     getch();
     system("cls");
 
-    printf("\nEnter your Firstname : ");
+    printf("\nEnter your Firstname.: ");
     scanf("%[^\n]",&fn);
     fflush(stdin);
-    printf("Enter your Lastname : ");
+    printf("Enter your Lastname....: ");
     scanf("%[^\n]",&ln);
     fflush(stdin);
-    printf("Enter your Gender : ");
+    printf("Enter your Gender......: ");
     scanf("%[^\n]",&gen);
     fflush(stdin);
 
@@ -55,18 +55,16 @@ int main(void)
     case 'E':
     case 'e':
 
-    printf("Enter your E-mail : ");
+    printf("Enter your E-mail............: ");
     scanf("%s",&email);
     fflush(stdin);
-    
-    printf("Enter your Password : ");
-    scanf("%s",&pass);
 
+    printf("Enter your Password..........: ");
+    scanf("%s",&pass);
     fflush(stdin);
 
-    printf("\nOnce again enter Password : ");
+    printf("\nOnce again enter Password..: ");
     scanf("%s",&cpass);
-
     fflush(stdin);
 
     printf("\n\n    *** CHECK YOUR DEATILES ***\n");
@@ -82,7 +80,7 @@ int main(void)
     case 'N':
     case 'n':
 
-    printf("Enter a Mobile Number (With out country code and area code) : ");
+    printf("Enter a Mobile Number (With out country code and area code)..: ");
     scanf("%lld",&no);
 
     n=no;
@@ -95,7 +93,7 @@ int main(void)
     printf("\n5.Singpore");
 
     do{
-    printf("\nEnter your Option : ");
+    printf("\nEnter your Option..: ");
     scanf("%d",&opt);
 
     } while (opt>5);
@@ -120,7 +118,7 @@ int main(void)
             printf("\n\nNOTE:-You will get OTP for every login with phone number");
         }
         else
-            printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.\nRelaunch the Program and try again.");
+            printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.\n\nRelaunch the Program and try again.");
             exit(1);
         break;
 
@@ -140,7 +138,7 @@ int main(void)
             printf("\n\nNOTE:-You will get OTP for every login with phone number");
         }
         else
-            printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.\nRelaunch the Program and try again.");
+            printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.\n\nRelaunch the Program and try again.");
             exit(1);
         break;
 
@@ -160,7 +158,7 @@ int main(void)
             printf("\n\nNOTE:-You will get OTP for every login with phone number");
         }
         else
-            printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.\nRelaunch the Program and try again.");
+            printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.\n\nRelaunch the Program and try again.");
             exit(1);
         break;
 
@@ -180,7 +178,7 @@ int main(void)
             printf("\n\nNOTE:-You will get OTP for every login with phone number");
         }
         else
-            printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.\nRelaunch the Program and try again.");
+            printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.\n\nRelaunch the Program and try again.");
             exit(1);
         break;
 
@@ -200,7 +198,7 @@ int main(void)
             printf("\n\nNOTE:-You will get OTP for every login with phone number");
         }
         else
-            printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.\nRelaunch the Program and try again.");
+            printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.\n\nRelaunch the Program and try again.");
             exit(1);
         break;
 
