@@ -16,6 +16,8 @@ int main(void)
     char fn[100],ln[100],ip,email[100],gen[100],choice,pass[100],cpass[100];
     no=n=opt=c=p=cp=0;
 
+    system("cls");
+
     printf("\n\n     *** WELCOME TO ONLINE APPLICATION PROGRAM ***");
     printf("\n\nPress any Key to Continue....");
     getch();
@@ -48,6 +50,7 @@ int main(void)
     printf("Enter your email : ");
     scanf("%s",&email);
     fflush(stdin);
+
     printf("Enter your password : ");
     do{ 
         pass[p]=getch(); 
@@ -60,7 +63,7 @@ int main(void)
 
     fflush(stdin);
 
-    printf("\nEnter your confirm password : ");
+    printf("\nOnce again enter password : ");
     do{ 
         cpass[cp]=getch(); 
         if(cpass[cp]!='\r'){ 
