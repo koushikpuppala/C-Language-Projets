@@ -11,13 +11,13 @@ This code is coded by using VS Code IDE.
 
 int main(void)
 {
-    long long int no;
-    int opt,c;
+    long long int no,n;
+    int opt,c,p,cp;
     char fn[100],ln[100],ip,email[200],gen[100],choice,pass[100],cpass[100];
-    no=opt=c=0;
+    no=n=opt=c=p=cp=0;
 
     printf("\n\n     *** WELCOME TO ONLINE APPLICATION PROGRAM ***");
-    printf("\n\nPress any Key to Contine....");
+    printf("\n\nPress any Key to Continue....");
     getch();
     system("cls");
 
@@ -38,32 +38,57 @@ int main(void)
     scanf("%c",&ip);
     fflush(stdin);
 
-    } while (ip != 'E' && ip != 'N');
+    } while (ip != 'E' && ip != 'e' && ip != 'N' && ip != 'n');
 
     switch(ip){
 
     case 'E':
+    case 'e':
 
     printf("Enter your email : ");
-    scanf("%[^\n]",&email);
+    scanf("%s",&email);
     fflush(stdin);
     printf("Enter your password : ");
-    scanf("%[^\n]",&pass);
+    do{ 
+        pass[p]=getch(); 
+        if(pass[p]!='\r'){ 
+            printf("*"); 
+        } 
+        p++; 
+    }while(pass[p-1]!='\r'); 
+    pass[p-1]='\0';
+
+    fflush(stdin);
+
+    printf("\nEnter your confirm password : ");
+    do{ 
+        cpass[cp]=getch(); 
+        if(cpass[cp]!='\r'){ 
+            printf("*"); 
+        } 
+        cp++; 
+    }while(cpass[cp-1]!='\r'); 
+    cpass[cp-1]='\0';
+
     fflush(stdin);
 
     printf("\n\n    *** CHECK YOUR DEATILES ***\n");
     printf("\nYour Fullname is \"%s %s\"",fn,ln);
     printf("\nYour Gender is \"%s\"",gen);
     printf("\nYour EmailID is \"%s\"",email);
+    printf("\nYour Password is \"%s\"",pass);
 
     break;
 
             //Mobile number Coding
 
     case 'N':
+    case 'n':
 
     printf("Enter a Mobile Number (With out country code and area code) : ");
     scanf("%lld",&no);
+
+    n=no;
 
     do{
 
@@ -94,10 +119,11 @@ int main(void)
             printf("\n\n    *** CHECK YOUR DEATILES ***\n");
             printf("\nYour Fullname is \"%s %s\"",fn,ln);
             printf("\nYour Gender is \"%s\"",gen);
-            printf("\nYour Mobile Number is \"%lld\"",no);
+            printf("\nYour Mobile Number is \"%lld\"",n);
+            printf("\n\nNOTE:-You will get OTP for every login with phone number");
         }
         else
-            printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.");
+            printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.\nRelaunch the Program and try again.");
 
         break;
 
@@ -113,10 +139,11 @@ int main(void)
             printf("\n\n    *** CHECK YOUR DEATILES ***\n");
             printf("\nYour Fullname is \"%s %s\"",fn,ln);
             printf("\nYour Gender is \"%s\"",gen);
-            printf("\nYour Mobile Number is \"%lld\"",no);
+            printf("\nYour Mobile Number is \"%lld\"",n);
+            printf("\n\nNOTE:-You will get OTP for every login with phone number");
         }
         else
-            printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.");
+            printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.\nRelaunch the Program and try again.");
 
         break;
 
@@ -132,10 +159,11 @@ int main(void)
             printf("\n\n    *** CHECK YOUR DEATILES ***\n");
             printf("\nYour Fullname is \"%s %s\"",fn,ln);
             printf("\nYour Gender is \"%s\"",gen);
-            printf("\nYour Mobile Number is \"%lld\"",no);
+            printf("\nYour Mobile Number is \"%lld\"",n);
+            printf("\n\nNOTE:-You will get OTP for every login with phone number");
         }
         else
-            printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.");
+            printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.\nRelaunch the Program and try again.");
 
         break;
 
@@ -151,10 +179,11 @@ int main(void)
             printf("\n\n    *** CHECK YOUR DEATILES ***\n");
             printf("\nYour Fullname is \"%s %s\"",fn,ln);
             printf("\nYour Gender is \"%s\"",gen);
-            printf("\nYour Mobile Number is \"%lld\"",no);
+            printf("\nYour Mobile Number is \"%lld\"",n);
+            printf("\n\nNOTE:-You will get OTP for every login with phone number");
         }
         else
-            printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.");
+            printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.\nRelaunch the Program and try again.");
 
         break;
 
@@ -170,10 +199,11 @@ int main(void)
             printf("\n\n    *** CHECK YOUR DEATILES ***\n");
             printf("\nYour Fullname is \"%s %s\"",fn,ln);
             printf("\nYour Gender is \"%s\"",gen);
-            printf("\nYour Mobile Number is \"%lld\"",no);
+            printf("\nYour Mobile Number is \"%lld\"",n);
+            printf("\n\nNOTE:-You will get OTP for every login with phone number");
         }
         else
-            printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.");
+            printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.\nRelaunch the Program and try again.");
 
         break;
 
