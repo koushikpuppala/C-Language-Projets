@@ -1,13 +1,15 @@
 /*
-This is the
-This code is coded by using VS Code IDE.
-@Developer Koushik.
+This is the program for Online Application Model.
+This code is written by using VS Code IDE.
+@Developer Puppala Koushik.
+@Mentor Atish Jain Sir.
+@Batch Timming 7-8 pm Class.
+Time taken to complete Half-Day.
 */
 
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
-
 
 int main(void)
 {
@@ -32,13 +34,13 @@ int main(void)
     system("cls");
 
     printf("\nEnter your Firstname.: ");
-    scanf("%[^\n]",&fn);
+    scanf("%s",&fn);
     fflush(stdin);
     printf("Enter your Lastname....: ");
-    scanf("%[^\n]",&ln);
+    scanf("%s",&ln);
     fflush(stdin);
     printf("Enter your Gender......: ");
-    scanf("%[^\n]",&gen);
+    scanf("%s",&gen);
     fflush(stdin);
 
     do
