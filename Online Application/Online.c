@@ -58,28 +58,14 @@ int main(void)
     printf("Enter your E-mail : ");
     scanf("%s",&email);
     fflush(stdin);
-
+    
     printf("Enter your Password : ");
-    do{ 
-        pass[p]=getch(); 
-        if(pass[p]!='\r'){ 
-            printf("*"); 
-        } 
-        p++; 
-    }while(pass[p-1]!='\r'); 
-    pass[p-1]='\0';
+    scanf("%s",&pass);
 
     fflush(stdin);
 
     printf("\nOnce again enter Password : ");
-    do{ 
-        cpass[cp]=getch(); 
-        if(cpass[cp]!='\r'){ 
-            printf("*"); 
-        } 
-        cp++; 
-    }while(cpass[cp-1]!='\r'); 
-    cpass[cp-1]='\0';
+    scanf("%s",&cpass);
 
     fflush(stdin);
 
