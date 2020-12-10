@@ -1,7 +1,9 @@
 /*
 This is the program to find the sum of total number to a single digit.
 This code ie Written in VS Code IDE.
-@author Koushik.
+@Developer Puppala Koushik.
+@Mentor Atish Jain Sir.
+@Batch Timming 7-8 pm Class.
 */
 
 #include<stdio.h>

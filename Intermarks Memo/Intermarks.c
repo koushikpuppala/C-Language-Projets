@@ -1,271 +1,200 @@
 /*
-
+This is the program for INTERMEDIATE MARKS MEMO.
+This code ie Written in VS Code IDE.
+@Developer Puppala Koushik.
+@Mentor Atish Jain Sir.
+@Batch Timming 7-8 pm Class.
 */
 #include<stdio.h>
 #include<conio.h>
 
 int main(void)
 {
-    int m1,m2,p,c,e,s,e1,e2,s1,s2,m11,m12,m21,m22,p1,p2,c1,c2,pc,cc,gtot;
+    int m1,m2,p,c,e,s,e1,e2,s1,s2,m11,m12,m21,m22,p1,p2,c1,c2,pp,cp,gtot;
     float tot,per;
-    m1=m2=p=c=e=s=tot=per=e1=e2=s1=s2=m11=m12=m21=m22=p1=p2=c1=c2=pc=cc=0;
+    m1=m2=p=c=e=s=tot=per=e1=e2=s1=s2=m11=m12=m21=m22=p1=p2=c1=c2=pp=cp=0;
     gtot=1000;
 
     printf("\n\n   *** THE CERTIFICATE OF INTERMEDIATE MARKS MEMO FOR STATE BOARD OF ANDHRA PRADESH ***\n\n");
 
-                                    /* Here is the coding section for entering English Marks */
+    /* Here is the coding section for entering English Marks */
 
+    while(1){//English Paper-1...
     printf("Enter the Marks of English Paper-1.....: ");
     scanf("%d",&e1);
 
-    while (e1>100)
-        {
-            printf("  ***Please enter the correct marks [The Max.Marks of English is 100. How you got more than \"Hundered\"]***  \n");
-            printf("Enter the Marks of English Paper-1.....: ");
-            scanf("%d",&e1);
-        }
-    while (e1<0)
-        {
-            printf("  ***Please enter the correct marks [The Min.Marks of English is 0. How you got less than \"Zero\")]***  \n");
-            printf("Enter the Marks of English Paper-1.....: ");
-            scanf("%d",&e1);
-        }
+    if (e1>=0 && e1<=100)
+    break;
+    else
+        printf("\nMax. marks of English is 100\nMin. marks of English is 0\n\nSo,Enter Marks Between 0-100 only\n\n");
+    }
 
+    while(1){//English Paper-2....
     printf("Enter the Marks of English Paper-2.....: ");
     scanf("%d",&e2);
 
-    while (e2>100)
-        {
-            printf("  ***Please enter the correct marks [The Max.Marks of English is 100. How you got more than \"Hundered\"]***  \n");
-            printf("Enter the Marks of English Paper-2.....: ");
-            scanf("%d",&e2);
-        }
-    while (e2<0)
-    {
-        printf("  ***Please enter the correct marks [The Min.Marks of English is 0. How you got less than \"Zero\")]***  \n");
-        printf("Enter the Marks of English Paper-2.....: ");
-        scanf("%d",&e2);
+    if (e2>=0 && e2<=100)
+    break;
+    else
+        printf("\nMax. marks of English is 100\nMin. marks of English is 0\n\nSo,Enter Marks Between 0-100 only\n\n");
     }
 
     e=e1+e2;
 
     printf("\nTotal Marks in ''English''....: %d\n\n",e);
 
-                                    /* Here is the coding section for entering Sanskrit Marks */
+    /* Here is the coding section for entering Sanskrit Marks */
 
+    while(1){//Sanskrit Paper-1...
     printf("Enter the Marks of Sanskrit Paper-1....: ");
     scanf("%d",&s1);
 
-    while (s1>100)
-        {
-            printf("  ***Please enter the correct marks [The Max.Marks of Sanskrit is 100. How you got more than \"Hundered\"]***  \n");
-            printf("Enter the Marks of Sanskrit paper-1....: ");
-            scanf("%d",&s1);
-        }
-    while (s1<0)
-        {
-            printf("  ***Please enter the correct marks***  \n");
-            printf("Enter the Marks of Sanskrit paper-1....: ");
-            scanf("%d",&s1);
-        }
+    if (s1>=0 && s1<=100)
+    break;
+    else
+        printf("\nMax. marks of Sanskrit is 100\nMin. marks of Sanskrit is 0\n\nSo,Enter Marks Between 0-100 only\n\n");
+    }
 
+    while(1){//Sanskrit Paper-2...
     printf("Enter the Marks of Sanskrit Paper-2....: ");
     scanf("%d",&s2);
 
-    while (s2>100)
-        {
-            printf("  ***Please enter the correct marks***  \n");
-            printf("Enter the Marks of Sanskrit paper-2....: ");
-            scanf("%d",&s2);
-        }
-    while (s2<0)
-        {
-            printf("  ***Please enter the correct marks***  \n");
-            printf("Enter the Marks of Sanskrit paper-2....: ");
-            scanf("%d",&s2);
-        }
+    if (s2>=0 && s2<=100)
+    break;
+    else
+        printf("\nMax. marks of Sanskrit is 100\nMin. marks of Sanskrit is 0\n\nSo,Enter Marks Between 0-100 only\n\n");
+    }
 
     s=s1+s2;
 
     printf("\nTotal Marks in ''Sanskrit''...: %d\n\n",s);
 
-                                    /* Here is the coding section for entering Maths-1 Marks */
+    /* Here is the coding section for entering Maths-1 Marks */
 
+    while(1){//Maths-1 Paper-1...
     printf("Enter the Marks of Maths-1 Paper-1.....: ");
     scanf("%d",&m11);
 
-    while (m11>75)
-        {
-            printf("  ***Please enter the correct marks***  \n");
-            printf("Enter the Marks of Maths-1 Paper-1.....: ");
-            scanf("%d",&m11);
-        }
-    while (m11<0)
-        {
-            printf("  ***Please enter the correct marks***  \n");
-            printf("Enter the Marks of Maths-1 Paper-1.....: ");
-            scanf("%d",&m11);
-        }
+    if (m11>=0 && m11<=75)
+    break;
+    else
+        printf("\nMax. marks of Maths is 75\nMin. marks of Maths is 0\n\nSo,Enter Marks Between 0-75 only\n\n");
+    }
 
+    while(1){//Maths-1 Paper-2...
     printf("Enter the Marks of Maths-1 Paper-2.....: ");
     scanf("%d",&m12);
 
-    while (m12>75)
-        {
-            printf("  ***Please enter the correct marks***  \n");
-            printf("Enter the Marks of Maths-1 Paper-2.....: ");
-            scanf("%d",&m12);
-        }
-    while (m12<0)
-        {
-            printf("  ***Please enter the correct marks***  \n");
-            printf("Enter the Marks of Maths-1 Paper-2.....: ");
-            scanf("%d",&m12);
-        }
+    if (m12>=0 && m12<=75)
+    break;
+    else
+        printf("\nMax. marks of Maths is 75\nMin. marks of Maths is 0\n\nSo,Enter Marks Between 0-75 only\n\n");
+    }
 
     m1=m12+m11;
 
     printf("\nTotal Marks in ''Maths-1''....: %d\n\n",m1);
 
-                                    /* Here is the coding section for entering Maths-2 Marks */
+    /* Here is the coding section for entering Maths-2 Marks */
 
+    while(1){//Maths-2 Paper-1...
     printf("Enter the Marks of Maths-2 Paper-1.....: ");
     scanf("%d",&m21);
 
-    while (m21>75)
-        {
-            printf("  ***Please enter the correct marks***  \n");
-            printf("Enter the Marks of Maths-2 Paper-1.....: ");
-            scanf("%d",&m21);
-        }
-    while (m21<0)
-        {
-            printf("  ***Please enter the correct marks***  \n");
-            printf("Enter the Marks of Maths-2 Paper-1.....: ");
-            scanf("%d",&m21);
-        }
+    if (m21>=0 && m21<=75)
+    break;
+    else
+        printf("\nMax. marks of Maths is 75\nMin. marks of Maths is 0\n\nSo,Enter Marks Between 0-75 only\n\n");
+    }
 
+    while(1){//Maths-2 Paper-2...
     printf("Enter the Marks of Maths-2 Paper-2.....: ");
     scanf("%d",&m22);
-    while (m22>75)
-        {
-            printf("  ***Please enter the correct marks***  \n");
-            printf("Enter the Marks of Maths-2 Paper-2.....: ");
-            scanf("%d",&m22);
-        }
-    while (m22<0)
-        {
-            printf("  ***Please enter the correct marks***  \n");
-            printf("Enter the Marks of Maths-2 Paper-2.....: ");
-            scanf("%d",&m22);
-        }
+
+    if (m22>=0 && m22<=75)
+    break;
+    else
+        printf("\nMax. marks of Maths is 75\nMin. marks of Maths is 0\n\nSo,Enter Marks Between 0-75 only\n\n");
+    }
+
 
     m2=m21+m22;
 
     printf("\nTotal Marks in ''Maths-2''....: %d\n\n",m2);
 
-                                    /* Here is the coding section for entering Physics Marks */
+    /* Here is the coding section for entering Physics Marks */
 
+    while(1){//Physics Paper-1...
     printf("Enter the Marks of Physics Paper-1.....: ");
     scanf("%d",&p1);
 
-    while (p1>60)
-        {
-            printf("  ***Please enter the correct marks***  \n");
-            printf("Enter the Marks of Physics Paper-1.....: ");
-            scanf("%d",&p1);
-        }
-    while (p1<0)
-        {
-            printf("  ***Please enter the correct marks***  \n");
-            printf("Enter the Marks of Physics Paper-1.....: ");
-            scanf("%d",&p1);
-        }
+    if (p1>=0 && p1<=60)
+    break;
+    else
+        printf("\nMax. marks of Physics is 60\nMin. marks of Physics is 0\n\nSo,Enter Marks Between 0-60 only\n\n");
+    }
 
+    while(1){//Physics Paper-2...
     printf("Enter the Marks of Physics Paper-2.....: ");
     scanf("%d",&p2);
 
-    while (p2>60)
-        {
-            printf("  ***Please enter the correct marks***  \n");
-            printf("Enter the Marks of Physics Paper-2.....: ");
-            scanf("%d",&p2);
-        }
-    while (p1<0)
-        {
-            printf("  ***Please enter the correct marks***  \n");
-            printf("Enter the Marks of Physics Paper-2.....: ");
-            scanf("%d",&p2);
-        }
+    if (p2>=0 && p2<=60)
+    break;
+    else
+        printf("\nMax. marks of Physics is 60\nMin. marks of Physics is 0\n\nSo,Enter Marks Between 0-60 only\n\n");
+    }
 
-    printf("Enter the Marks in Physics Practical...: ");
-    scanf("%d",&pc);
+    while(1){//Physics Practicals...
+    printf("Enter the Marks in Physics Practicals...: ");
+    scanf("%d",&pp);
 
-    while (pc>30)
-        {
-            printf("  ***Please enter the correct marks***  \n");
-            printf("Enter the Marks in Physics Practical...: ");
-            scanf("%d",&pc);
-        }
-    while (pc<0)
-        {
-            printf("  ***Please enter the correct marks***  \n");
-            printf("Enter the Marks in Physics Practical...: ");
-            scanf("%d",&pc);
-        }
+    if (pp>=0 && pp<=30)
+    break;
+    else
+        printf("\nMax. marks of Physics Practicals is 30\nMin. marks of Physics Practicals is 0\n\nSo,Enter Marks Between 0-30 only\n\n");
+    }
 
-    p=p1+p2+pc;
+    p=p1+p2+pp;
 
-    printf("\nTotal Marks in ''Physics''....: %d\n\n",p);
+    printf("\nTotal Marks in \"Physics\"....: %d\n\n",p);
 
-                                    /* Here is the coding section for entering Chemistry Marks */
+    /* Here is the coding section for entering Chemistry Marks */
 
+    while(1){//Chemistry Paper-1...
     printf("Enter the Marks of Chemistry Paper-1...: ");
     scanf("%d",&c1);
 
-    while (c1>60)
-        {
-            printf("  ***Please enter the correct marks***  \n");
-            printf("Enter the Marks of Chemistry Paper-1...: ");
-            scanf("%d",&c1);
-        }
-    while (c1<0)
-        {
-            printf("  ***Please enter the correct marks***  \n");
-            printf("Enter the Marks of Chemistry Paper-1...: ");
-            scanf("%d",&c1);
-        }
+    if (c1>=0 && c1<=60)
+    break;
+    else
+        printf("\nMax. marks of Chemistry is 60\nMin. marks of Chemistry is 0\n\nSo,Enter Marks Between 0-60 only\n\n");
+    }
 
+    while(1){//Chemistry Paper-2...
     printf("Enter the Marks of Chemistry Paper-2...: ");
     scanf("%d",&c2);
 
-    while (c2<0)
-        {
-            printf("  ***Please enter the correct marks***  \n");
-            printf("Enter the Marks of Chemistry Paper-2...: ");
-            scanf("%d",&c2);
-        }
+    if (c2>=0 && c2<=60)
+    break;
+    else
+        printf("\nMax. marks of Chemistry is 60\nMin. marks of Chemistry is 0\n\nSo,Enter Marks Between 0-60 only\n\n");
+    }
 
-    printf("Enter the Marks in Chemistry Practical.: ");
-    scanf("%d",&cc);
-    while (cc>30)
-        {
-            printf("  ***Please enter the correct marks***  \n");
-            printf("Enter the Marks in Chemistry Practical.: ");
-            scanf("%d",&cc);
-        }
-    while (cc<0)
-        {
-            printf("  ***Please enter the correct marks***  \n");
-            printf("Enter the Marks in Chemistry Practical.: ");
-            scanf("%d",&cc);
-        }
+    while(1){//Chemistry Practicals...
+    printf("Enter the Marks in Chemistry Practicals...: ");
+    scanf("%d",&cp);
 
-    c=c1+c2+cc;
+    if (cp>=0 && cp<=30)
+    break;
+    else
+        printf("\nMax. marks of Chemistry Practicals is 30\nMin. marks of Chemistry Practicals is 0\n\nSo,Enter Marks Between 0-30 only\n\n");
+    }
 
-    printf("\nTotal Marks in Chemistry..: %d\n\n",c);
+    c=c1+c2+cp;
 
-                                    /* Here is the coding section for Displaying Total Marks, Percentage */
+    printf("\nTotal Marks in \"Chemistry\"..: %d\n\n",c);
+
+    /* Here is the coding section for Displaying Total Marks, Percentage */
 
     tot=m1+m2+p+c+e+s;
     per=(tot/gtot)*100;
