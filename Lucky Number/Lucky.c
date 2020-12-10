@@ -12,6 +12,7 @@ int main(void)
     unsigned long no,r;
     int ln;
     no=r=ln=0;
+    printf("");
     printf("Hey..\nEnter any number i will show you magic :");
     scanf("%lu",&no);
 

@@ -1,7 +1,7 @@
 /*
-This is the program to check the entered number is valid or not.
+This is the
 This code is coded by using VS Code IDE.
-@author Koushik.
+@Developer Koushik.
 */
 
 #include<stdio.h>
@@ -13,7 +13,7 @@ int main(void)
 {
     long long int no,n;
     int opt,c,p,cp;
-    char fn[100],ln[100],ip,email[100],gen[100],choice,pass[100],cpass[100];
+    char fn[100],ln[100],ip,email[100],gen[100],choice,pass[100];
     no=n=opt=c=p=cp=0;
 
     system("cls");
@@ -61,10 +61,6 @@ int main(void)
 
     printf("Enter your Password..........: ");
     scanf("%s",&pass);
-    fflush(stdin);
-
-    printf("\nOnce again enter Password..: ");
-    scanf("%s",&cpass);
     fflush(stdin);
 
     printf("\n\n    *** CHECK YOUR DEATILES ***\n");
@@ -117,9 +113,9 @@ int main(void)
             printf("\nYour Mobile Number is \"%lld\"",n);
             printf("\n\nNOTE:-You will get OTP for every login with phone number");
         }
-        else
+        else{
             printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.\n\nRelaunch the Program and try again.");
-            exit(1);
+            exit(1);}
         break;
 
     case 2: //USA have 7-Digit number
@@ -137,9 +133,9 @@ int main(void)
             printf("\nYour Mobile Number is \"%lld\"",n);
             printf("\n\nNOTE:-You will get OTP for every login with phone number");
         }
-        else
+        else{
             printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.\n\nRelaunch the Program and try again.");
-            exit(1);
+            exit(1);}
         break;
 
     case 3: //Russia have 7-Digit number
@@ -157,9 +153,9 @@ int main(void)
             printf("\nYour Mobile Number is \"%lld\"",n);
             printf("\n\nNOTE:-You will get OTP for every login with phone number");
         }
-        else
+        else{
             printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.\n\nRelaunch the Program and try again.");
-            exit(1);
+            exit(1);}
         break;
 
     case 4: //Engalnd have 10-Digit number
@@ -177,9 +173,9 @@ int main(void)
             printf("\nYour Mobile Number is \"%lld\"",n);
             printf("\n\nNOTE:-You will get OTP for every login with phone number");
         }
-        else
+        else{
             printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.\n\nRelaunch the Program and try again.");
-            exit(1);
+            exit(1);}
         break;
 
     case 5: //Singpore have 8-Digit number
@@ -197,9 +193,9 @@ int main(void)
             printf("\nYour Mobile Number is \"%lld\"",n);
             printf("\n\nNOTE:-You will get OTP for every login with phone number");
         }
-        else
+        else{
             printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.\n\nRelaunch the Program and try again.");
-            exit(1);
+            exit(1);}
         break;
 
     default:printf("\n");
