@@ -18,25 +18,33 @@ int main(void)
 
     system("cls");
 
-    printf("\n\n     *** WELCOME TO ONLINE APPLICATION PROGRAM ***");
-    printf("\n\nPress any Key to Continue....");
+    printf("     *** WELCOME TO ONLINE APPLICATION PROGRAM ***\n");
+    getch();
+    printf("Hi, Friends I am Koushikpuppala.\n");
+    getch();
+    printf("I have made this ONLINE APPLICATION PROGRAM\nThis program is just for Fun.\n");
+    getch();
+    printf("This program is coded in VS CODE IDE.\n");
+    getch();
+    printf("Have a look and ENJOY it.\n");
+    printf("\nPress any Key to Continue....\n");
     getch();
     system("cls");
 
-    printf("\nEnter your firstname : ");
+    printf("\nEnter your Firstname : ");
     scanf("%[^\n]",&fn);
     fflush(stdin);
-    printf("Enter your lastname : ");
+    printf("Enter your Lastname : ");
     scanf("%[^\n]",&ln);
     fflush(stdin);
-    printf("Enter your gender : ");
+    printf("Enter your Gender : ");
     scanf("%[^\n]",&gen);
     fflush(stdin);
 
     do
     {
 
-    printf("Do you want to continue with (E)mail or (N)umber : ");
+    printf("Do you want to continue with (E)-mail or (N)umber for login : ");
     scanf("%c",&ip);
     fflush(stdin);
 
@@ -47,11 +55,11 @@ int main(void)
     case 'E':
     case 'e':
 
-    printf("Enter your email : ");
+    printf("Enter your E-mail : ");
     scanf("%s",&email);
     fflush(stdin);
 
-    printf("Enter your password : ");
+    printf("Enter your Password : ");
     do{ 
         pass[p]=getch(); 
         if(pass[p]!='\r'){ 
@@ -63,7 +71,7 @@ int main(void)
 
     fflush(stdin);
 
-    printf("\nOnce again enter password : ");
+    printf("\nOnce again enter Password : ");
     do{ 
         cpass[cp]=getch(); 
         if(cpass[cp]!='\r'){ 
@@ -93,14 +101,14 @@ int main(void)
 
     n=no;
 
-    do{
-
     printf("\nWhich Country number you have entered above");
     printf("\n1.India");
     printf("\n2.USA");
     printf("\n3.Russia");
     printf("\n4.Engalnd");
     printf("\n5.Singpore");
+
+    do{
     printf("\nEnter your Option : ");
     scanf("%d",&opt);
 
