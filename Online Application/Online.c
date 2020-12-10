@@ -135,7 +135,7 @@ int main(void)
         }
         else
             printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.\nRelaunch the Program and try again.");
-
+            exit(1);
         break;
 
     case 2: //USA have 7-Digit number
@@ -155,7 +155,7 @@ int main(void)
         }
         else
             printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.\nRelaunch the Program and try again.");
-
+            exit(1);
         break;
 
     case 3: //Russia have 7-Digit number
@@ -175,7 +175,7 @@ int main(void)
         }
         else
             printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.\nRelaunch the Program and try again.");
-
+            exit(1);
         break;
 
     case 4: //Engalnd have 10-Digit number
@@ -195,7 +195,7 @@ int main(void)
         }
         else
             printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.\nRelaunch the Program and try again.");
-
+            exit(1);
         break;
 
     case 5: //Singpore have 8-Digit number
@@ -215,7 +215,7 @@ int main(void)
         }
         else
             printf("Sorry the entered number is not valid in this Country.\nPlease check you entered Country or Number is Correct.\nRelaunch the Program and try again.");
-
+            exit(1);
         break;
 
     default:printf("\n");
