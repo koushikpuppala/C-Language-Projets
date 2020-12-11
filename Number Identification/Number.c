@@ -1,4 +1,4 @@
-// This is the project for tell Positive or Negative or Neutral number
+// This is the project for tell Positive or Negative or Neutral number or not a Real number.
 
 #include<stdio.h>
 
