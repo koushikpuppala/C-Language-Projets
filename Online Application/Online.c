@@ -3,7 +3,7 @@ This is the program for Online Application Model.
 This code is written by using VS Code IDE.
 @Developer Puppala Koushik.
 @Mentor Atish Jain Sir.
-@Batch Timming 7-8 pm Class.
+@Batch Timing 7-8 pm Class.
 Time taken to complete the code is Half-Day.
 */
 
@@ -33,10 +33,10 @@ int main(void)
     getch();
     system("cls");
 
-    printf("\nEnter your Firstname.: ");
+    printf("\nEnter your First name.: ");
     scanf("%s",&fn);
     fflush(stdin);
-    printf("Enter your Lastname....: ");
+    printf("Enter your Last name....: ");
     scanf("%s",&ln);
     fflush(stdin);
     printf("Enter your Gender......: ");
@@ -66,7 +66,7 @@ int main(void)
     fflush(stdin);
 
     printf("\n\n    *** CHECK YOUR DEATILES ***\n");
-    printf("\nYour Fullname is \"%s %s\"",fn,ln);
+    printf("\nYour Full name is \"%s %s\"",fn,ln);
     printf("\nYour Gender is \"%s\"",gen);
     printf("\nYour EmailID is \"%s\"",email);
     printf("\nYour Password is \"%s\"",pass);
@@ -110,7 +110,7 @@ int main(void)
 
         if (c==10){
             printf("\n\n    *** CHECK YOUR DEATILES ***\n");
-            printf("\nYour Fullname is \"%s %s\"",fn,ln);
+            printf("\nYour Full name is \"%s %s\"",fn,ln);
             printf("\nYour Gender is \"%s\"",gen);
             printf("\nYour Mobile Number is \"%lld\"",n);
             printf("\n\nNOTE:-You will get OTP for every login with phone number");
@@ -130,7 +130,7 @@ int main(void)
 
         if (c==7){
             printf("\n\n    *** CHECK YOUR DEATILES ***\n");
-            printf("\nYour Fullname is \"%s %s\"",fn,ln);
+            printf("\nYour Full name is \"%s %s\"",fn,ln);
             printf("\nYour Gender is \"%s\"",gen);
             printf("\nYour Mobile Number is \"%lld\"",n);
             printf("\n\nNOTE:-You will get OTP for every login with phone number");
@@ -150,7 +150,7 @@ int main(void)
 
         if (c==7){
             printf("\n\n    *** CHECK YOUR DEATILES ***\n");
-            printf("\nYour Fullname is \"%s %s\"",fn,ln);
+            printf("\nYour Full name is \"%s %s\"",fn,ln);
             printf("\nYour Gender is \"%s\"",gen);
             printf("\nYour Mobile Number is \"%lld\"",n);
             printf("\n\nNOTE:-You will get OTP for every login with phone number");
@@ -160,7 +160,7 @@ int main(void)
             exit(1);}
         break;
 
-    case 4: //Engalnd have 10-Digit number
+    case 4: //England have 10-Digit number
 
         while (no>0)
         {
@@ -170,7 +170,7 @@ int main(void)
 
         if (c==10){
             printf("\n\n    *** CHECK YOUR DEATILES ***\n");
-            printf("\nYour Fullname is \"%s %s\"",fn,ln);
+            printf("\nYour Full name is \"%s %s\"",fn,ln);
             printf("\nYour Gender is \"%s\"",gen);
             printf("\nYour Mobile Number is \"%lld\"",n);
             printf("\n\nNOTE:-You will get OTP for every login with phone number");
@@ -180,7 +180,7 @@ int main(void)
             exit(1);}
         break;
 
-    case 5: //Singpore have 8-Digit number
+    case 5: //Singapore have 8-Digit number
 
         while (no>0)
         {
@@ -190,7 +190,7 @@ int main(void)
 
         if (c==8){
             printf("\n\n    *** CHECK YOUR DEATILES ***\n");
-            printf("\nYour Fullname is \"%s %s\"",fn,ln);
+            printf("\nYour Full name is \"%s %s\"",fn,ln);
             printf("\nYour Gender is \"%s\"",gen);
             printf("\nYour Mobile Number is \"%lld\"",n);
             printf("\n\nNOTE:-You will get OTP for every login with phone number");
@@ -218,7 +218,7 @@ int main(void)
 
     if ((choice == 'Y') || (choice == 'y'))
 
-        printf("\n\nYour Application is Submitted Sucessfully");
+        printf("\n\nYour Application is Submitted Successfully");
 
     else if ((choice == 'N') || (choice == 'n'))
 
