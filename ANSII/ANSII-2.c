@@ -1,5 +1,6 @@
 #include<stdio.h>
-main()
+#include<conio.h>
+int main(void)
 {
 
 	char sy;
@@ -7,7 +8,7 @@ main()
 	printf("Hey Enter any Symbol or Digit or Alphabet \nI will convert into a Unique Number . . :");
 	scanf("%c",&sy);
 
-	printf("Here is the Number that \nYou need is Know as ANSII Code(Number) ... :  { '%d' }  ",sy);
+	printf("Here is the Number that \nYou need is Know as ANSII Code(Number) ... :  \" %d \"  ",sy);
 
 	getch();
 
