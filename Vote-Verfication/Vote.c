@@ -1,6 +1,7 @@
 //It is about verification of age for vote
 #include<stdio.h>
-main()
+#include<conio.h>
+int main(void)
 {
     int age=0;
     int z=0;
