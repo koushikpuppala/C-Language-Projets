@@ -1,10 +1,11 @@
 /*
- C Program to Display the ATM Transaction
- Created by Puppala Koushik,
- By Using the IDE VS Code.
- */
+C Program to Display the ATM Transaction
+Created by Puppala Koushik,
+By Using the IDE VS Code.
+*/
 #include <stdio.h>
 #include<conio.h>
+#include<stdlib.h>
 
 unsigned long amount=32800, deposit, withdraw;
 int choice, pin, k;
@@ -12,11 +13,11 @@ char transaction ='y';
 
 void main()
 {
-	while (pin != 1973)
+	while (pin != 2020)
 	{
 		printf("ENTER YOUR SECRET PIN NUMBER:");
 		scanf("%d", &pin);
-		if (pin != 1973)
+		if (pin != 2020)
 		printf("PLEASE ENTER VALID PASSWORD\n");
 	}
 	do
@@ -59,7 +60,8 @@ void main()
 			printf("YOUR BALANCE IS %lu", amount);
 			break;
 		case 4:
-			printf("\n THANK U USING ATM");
+			printf("\n\n THANKS FOR USING OUT ATM SERVICE");
+			exit(1);
 			break;
 		default:
 			printf("\n INVALID CHOICE");

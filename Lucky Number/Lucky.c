@@ -30,7 +30,9 @@ int main(void)
         }
     }
 
-    printf("Here is the Magic of Entered number :%d\n",ln);
+    printf("\nHere is the Magic of Entered number :%d\n",ln);
+
+    printf("\n");
 
     getch();
 
