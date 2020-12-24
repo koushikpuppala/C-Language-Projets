@@ -9,8 +9,25 @@ This is the program for Astronomay number.
 
 int main(void)
 {
-    long long int no, r, temp, sum;
+    int no, r, temp, sum;
+    no = r = temp = sum = 0;
 
-    prinf("Hey Enter any Number\nI will tell Astronomay number...:");
+    printf("Hey Enter any Number\nI will tell Astronomay number...:");
     scanf("%d",&no);
+
+    temp = no;
+
+    while(no>0)
+    {
+        r=no%10;
+        sum = sum + (r * r * r);
+        no = no / 10;
+    }
+    if(sum==temp)
+    {
+        printf("it si Astronomay number");
+    } else {
+        printf("It is not a Astronomay number");
+    }
+
 }

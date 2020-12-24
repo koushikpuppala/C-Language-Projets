@@ -14,13 +14,12 @@ int main(void)
     unsigned long no,r;
     int ln;
     no=r=ln=0;
-    printf("");
     printf("Hey..\nEnter any number i will show you magic :");
     scanf("%lu",&no);
 
     while (no>0)
     {
-        r=no%10;
+        r=no%10;    
         ln=ln+r;
         no=no/10;
         if (no==0 && ln>9)
