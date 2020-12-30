@@ -299,7 +299,7 @@ int main(void)
                         r=lcn%10;
                         lr=lr+r;
                         lcn=lcn/10;
-                        if (no==0 && lr>9)
+                        if (lcn==0 && lr>9)
                         {
                         lcn=lr;
                         lr=0;
