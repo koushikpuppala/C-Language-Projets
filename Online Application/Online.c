@@ -447,7 +447,7 @@ int main(void)
                     system("cls");
                     printf("    *** SECTION - I ***\n");
                     printf("1.In a random experiment, a fair die is rolled until two fours are obtained in succession. The probability that the experiment will end in the fifth throw of the die is equal to");
-                    printf("\n1.175/6^5\n2.200/6^5\n3.150/6^5\n4.225/6^5\n5.Skip");
+                    printf("\n1.175/6^5\n2.200/6^5\n3.150/6^5\n4.225/6^5\n5.Skip\n");
                     printf("Enter your Option : ");
                     scanf("%d",&M1);
                     if((Aopt == 1) && (M1 == 1)){
@@ -457,7 +457,7 @@ int main(void)
                         Scount1 = Scount1 + 4;
                         Tcount = Tcount + 4;
                     } else if (M1==5){
-                        printf("\n");
+                        break;
                     } else if ((Aopt == 1) && (M1 != 1)) {
                         Scount1 = Scount1 + 0;
                         Tcount = Tcount + 0;
@@ -466,6 +466,24 @@ int main(void)
                         Tcount = Tcount - 1;
                     }
                     printf("2.");
+                    printf("");
+                    printf("Enter your Option : ");
+                    scanf("%d", &M2);
+                    if((Aopt == 1) && (M2 == 3 )){
+                        Scount1 = Scount1 + 1;
+                        Tcount = Tcount + 1;
+                    } else if((Aopt == 2) && (M2 == 3 )) {
+                        Scount1 = Scount1 + 4;
+                        Tcount = Tcount + 4;
+                    } else if (M2==5){
+                        break;
+                    } else if ((Aopt == 1) && (M2 != 3 )) {
+                        Scount1 = Scount1 + 0;
+                        Tcount = Tcount + 0;
+                    } else {
+                        Scount1 = Scount1 - 1;
+                        Tcount = Tcount - 1;
+                    }
                     break;
                 }
                 case 6:{
