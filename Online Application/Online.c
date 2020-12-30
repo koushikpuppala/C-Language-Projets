@@ -28,7 +28,7 @@ int main(void)
 
     long long int no,n,in,rn,rin,ot;
     unsigned long lcn,r,xtemp,temp,xan,an,enter,xsum,sum;
-    int opt,c,otp,rotp,help,MAX,MIN,lin,lr,p,xp,ain,ai,A1,l,h,acount;
+    int opt,c,otp,rotp,help,MAX,MIN,lin,lr,p,xp,ain,ai,A1,l,h,acount,Aopt,M1,M2,M3,M4,P1,P2,P3,P4,C1,C2,C3,C4,Scount1,Scount2,Scount3,Tcount;
     char fn[100],ln[100],ip,email[100],gen[100],choice,pass[100],LE[100],LP[100],sy,ep,k;
     an = p = temp = sum = ain = ai = A1 = l = enter = acount = xan = xp = xsum = xtemp = h = 0;
     no = n = in = opt = c = otp = rotp = help = x = lin = lcn = r = lr = rn = rin = ot = 0;
@@ -200,9 +200,6 @@ int main(void)
     }
     break;
 
-    default: printf("\n");
-    }
-
     CHECK:
         no = n;
         fflush(stdin);
@@ -211,6 +208,9 @@ int main(void)
         printf("\nYour Gender is \"%s\"", gen);
         printf("\nYour Mobile Number is \"%lld\"", no);
         printf("\n\nNOTE:-You will get OTP for every login with phone number");
+
+    default: printf("\n");
+    }
 
         printf("\n\n    *** IF DEATILES ARE CORRECT THEN TYPE \"(Y)ES\"\n        IF DEATILES HAVE CORRECTIONS THEN TYPE \"(N)O\" ***");
 
@@ -267,7 +267,7 @@ int main(void)
                 break;
             else
             {
-                printf("Entered Verification Code is WRONG\nTry Again");
+                printf("Entered Verification Code is WRONG\nTry Again\n");
             }
 
             }
@@ -291,6 +291,7 @@ int main(void)
 
                 case 1:{
                     system("cls");
+                    lcn = r = lr = 0;
                     printf("Hey..\nEnter any number i will show you magic :");
                     scanf("%lu",&lcn);
                     while (lcn>0)
@@ -313,6 +314,7 @@ int main(void)
 
                 case 2:{
                     system("cls");
+                    rn = in = ot = 0;
                     printf("Hey...\nEnter a number I will Reverse it and give you result : ");
                     scanf("%lld",&rn);
                     while (rn>0)
@@ -334,6 +336,7 @@ int main(void)
                     switch(ain){
                         case 1:{
                             system("cls");
+                            an = temp = p = sum = 0;
                             printf("Hey Enter any Number\nI will tell Whether it is Armstrong number or not...:");
                             scanf("%lu",&an);
                     
@@ -355,10 +358,11 @@ int main(void)
                         }
                         case 2:{
                             system("cls");
+
+                            acount = xan = xsum = xtemp = 0;
+
                             printf("Enter the number till which you want to find Armstrong numbers...: ");
                             scanf("%lu",&enter);
-
-                            acount = 0;
 
                             for (xan = 0; xan <= enter; xan++)
                             {
@@ -405,6 +409,7 @@ int main(void)
                         }
                         case 2:{
                             system("cls");
+                            A1 = 0;
                             printf("Enter the ASCII Code (0-225) :");
                             scanf("%d",&A1);
                             printf("The Symbol for the ASCII Code %d number is .....: \" [ %c ] \" ",A1,A1);
@@ -415,14 +420,59 @@ int main(void)
                 }
                 case 5:{
                     system("cls");
-                    printf("Hi This is Still under development");
+                    Aopt = M1 = M2 = M3 = M4 = P1 = P2 = P3 = P4 = C1 = C2 = C3 = C4 = 0;
+                    Scount1 = Scount2 = Scount3 = Tcount = 0;
+                    printf("Hey..\nWhich Model Exam do you want to take");
+                    printf("\n1.EAMCEET MODEL");
+                    printf("\n2.JEE MAINS MODEL");
+                    printf("\nEnter your Option : ");
+                    scanf("%d",&Aopt);
+                    switch(Aopt){
+                        case 1:{
+                            printf("Hey this EAMCEET MODEL Assignment\nThere are total 12 Questions\nThere are 3 Sections in this assignment\n");
+                            printf("First Section contains Maths\nSecond Section contains Physics\nThird Section contains Chemistry\n");
+                            printf("The Marks Schemas\n+1 if the answer is correct\n0 in any remaining cases");
+                            printf("\n\nNOTE : You can't change the response if you move to another Question\n       You can skip the question it means that question is unanswered\n");
+                            printf("       You should go in order in which the Questions you get");
+                        }break;
+                        case 2:{
+                            printf("Hey this JEE MAINS MODEL Assignment\nThere are total 12 Questions\nThere are 3 Sections in this assignment");
+                            printf("First Section contains Maths\nSecond Section contains Physics\nThird Section contains Chemistry");
+                            printf("The Marks Schemas\n+4 if the answer is correct\n-1 if the answer is wrong\n0 in any remaining cases");
+                            printf("\n\nNOTE : You can't change the response if you move to another Question\n       You can skip the question it means that question is unanswered\n");
+                            printf("       You should go in order in which the Questions you get");
+                        }break;
+                    }
+                    getch();
+                    system("cls");
+                    printf("    *** SECTION - I ***\n");
+                    printf("1.In a random experiment, a fair die is rolled until two fours are obtained in succession. The probability that the experiment will end in the fifth throw of the die is equal to");
+                    printf("\n1.175/6^5\n2.200/6^5\n3.150/6^5\n4.225/6^5\n5.Skip");
+                    printf("Enter your Option : ");
+                    scanf("%d",&M1);
+                    if((Aopt == 1) && (M1 == 1)){
+                        Scount1 = Scount1 + 1;
+                        Tcount = Tcount + 1;
+                    } else if((Aopt == 2) && (M1 == 1)) {
+                        Scount1 = Scount1 + 4;
+                        Tcount = Tcount + 4;
+                    } else if (M1==5){
+                        printf("\n");
+                    } else if ((Aopt == 1) && (M1 != 1)) {
+                        Scount1 = Scount1 + 0;
+                        Tcount = Tcount + 0;
+                    } else {
+                        Scount1 = Scount1 - 1;
+                        Tcount = Tcount - 1;
+                    }
+                    printf("2.");
                     break;
                 }
                 case 6:{
                     system("cls");
                     fflush(stdin);
-                    printf("Hey Do you want Exit.\n");
-                    printf("If yes enter \"y\" or Enter any \"n\" : ");
+                    printf("Hey Do you want Exit.\n\n");
+                    printf("If yes enter \"y\"\n If no enter \"n\"\nEnter your Option : ");
                     scanf("%c", &ep);
                     if(ep =='y' || ep == 'Y'){
                         printf("Have a nice day\nBye");
