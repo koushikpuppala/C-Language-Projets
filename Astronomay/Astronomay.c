@@ -25,7 +25,7 @@ int main(void)
     }
     if(sum==temp)
     {
-        printf("it si Astronomay number");
+        printf("it is Astronomay number");
     } else {
         printf("It is not a Astronomay number");
     }

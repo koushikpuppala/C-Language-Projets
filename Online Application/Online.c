@@ -259,7 +259,8 @@ int main(void)
     do
     {
         printf("What do you want to Do\n");
-        printf("1.Lucky Number\n2.Reversing of numbers\n3.Armstrong number\n4.ASCII\n5.Assignment\n6.logout\n");
+        printf("1.Lucky Number\n2.Reversing of numbers\n3.Armstrong number\n4.ASCII\n5.Guess the number\n6.Assignment");
+        printf("\n7.Asscending or Decending Order\n8.logout\n");
         printf("Enter your Option : ");
         scanf("%d", &lin);
 
@@ -407,6 +408,56 @@ int main(void)
         }
         case 5:
         {
+            unsigned long long guess,enter,div,MAX,MIN;
+            int i,no;
+            no=guess=enter=i=0;MAX=MIN=1;
+            system("cls");
+            printf("You will have only 3 Chance to Guess the number\n");
+            printf("How many digits number do you want to Guess (Number > 0) : ");
+            scanf("%d",&no);
+
+            if(no==1)
+            {
+                srand(time(0));
+                guess = rand()%10+1;
+            } else
+            {
+                while(no>1)
+                {
+                    MAX=(MAX*100)-1;
+                    MIN=MIN*10;
+                    no=no-1;
+                }
+
+                srand(time(0));
+                guess = (rand()%(MAX- MIN)+1)+MIN;
+            }
+
+            for (i=1;i<4;i++)
+            {
+                printf("\n\nNow you can Enter a number that you guess : ");
+                scanf("%llu",&enter);
+
+                if (enter<guess)
+                {
+                    printf("You have Entered Small number\n\nTry Again");
+                } else if(enter>guess)
+                {
+                    printf("You have Entered large number\n\nTry Again");
+                } else break;
+            }
+            if (enter==guess)
+            {
+                printf("Awesome You Gussed the Number in %d chance",i);
+                break;
+            } else if ((enter>guess||enter<guess)&&i>=4)
+            {
+                printf("You Failed to Guess the number\nFinally the number is %llu",guess);
+            }
+            break;
+        }
+        case 6:
+        {
             system("cls");
             Aopt = M1 = M2 = M3 = M4 = P1 = P2 = P3 = P4 = C1 = C2 = C3 = C4 = 0;
             Scount1 = Scount2 = Scount3 = Tcount = 0;
@@ -507,7 +558,73 @@ int main(void)
             }
             break;
         }
-        case 6:
+        case 7:
+        {
+            int opt,input,temp,i,j;
+            opt=input=temp=0;
+            system("cls");
+            printf("Which model do u want to do\n");
+            printf("1.Asscending Order\n2.Decending Order\n");
+            printf("Enter your Option :");
+            scanf("%d",&opt);
+            printf("How many numbers do you want to compare : ");
+            scanf("%d",&input);
+                    
+            int arr[input];
+
+            switch (opt)
+            {
+                case 1:
+                {
+                    for(i=0;i<input;i++)
+                    {
+                        printf("Enter your %d number : ",i+1);
+                        scanf("%d",&arr[i]);
+                    }
+                    for(i=0;i<input;i++)
+                    {
+                        for(j=i+1;j<input;j++)
+                        {
+                            if(arr[i]>arr[j])
+                            {
+                                temp=arr[i];
+                                arr[i]=arr[j];
+                                arr[j]=temp;
+                            }
+                        }
+                    }
+                    break;
+                }
+                case 2:
+                {
+                    for(i=0;i<input;i++)
+                    {
+                        printf("Enter your %d number : ",i+1);
+                        scanf("%d",&arr[i]);
+                    }
+                    for(i=0;i<input;i++)
+                    {
+                        for(j=i+1;j<input;j++)
+                        {
+                            if(arr[i]<arr[j])
+                            {
+                                temp=arr[i];
+                                arr[i]=arr[j];
+                                arr[j]=temp;
+                            }
+                        }
+                    }
+                    break;
+                }
+            }
+            printf("\nHere is the Required Order : \n");
+            for(i=0;i<input;i++)
+            {
+                printf("%d\t",arr[i]);
+            }
+            break;
+        }
+        case 8:
         {
             system("cls");
             fflush(stdin);
